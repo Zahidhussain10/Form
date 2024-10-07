@@ -3,23 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Form</title>
+    <title>Form</title>
+    
 </head>
 <body>
     
 <form>
 
-Username: <input type="text" >
-<br><br>
-password: <input type="text">
-<br><br>
-Gender: <input type="radio" Name="Gender"> Male 
-        <input type="radio" name="Gender" > Female
-<br><br>
-Email: <input type="text" >
-<br><br>
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" required>
+    <br><br>
 
-Address: <br><textarea name="Address" ></textarea>
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" required>
+    <br><br>
+
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="Male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label>
+    <br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+
+    <label for="address">Address:</label>
+    <br>
+    <textarea id="address" name="address" rows="4" cols="50"></textarea>
+    <br><br>
+
+    <input type="submit" value="Submit">
+
 </form>
 
 </body>
